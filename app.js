@@ -20,6 +20,6 @@ app.get('/:id?', function(req, res) {
     res.send({ "unix": date1, "natural": date2 });
 });
 
-app.listen(process.env.PORT,process.env.IP, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port '+process.env.PORT);
 });
